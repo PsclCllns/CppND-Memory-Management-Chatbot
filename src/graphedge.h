@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <iostream>
 
 class GraphNode; // forward declaration
 
@@ -21,6 +22,7 @@ private:
 public:
     // constructor / desctructor
     GraphEdge(int id);
+    ~GraphEdge() {std::cout<<"Destructor GraphEdge\n";}
 
     // getter / setter
     int GetID() { return _id; }
