@@ -46,7 +46,7 @@ ChatBot::~ChatBot()
 ////
 ChatBot::ChatBot(const ChatBot& chatBot)
 {
-    std::cout<<"--> ChatBot copy constructor\n";
+    std::cout<<"ChatBot copy constructor\n";
     if (chatBot._image == nullptr || chatBot._image == NULL)
     {
         _image = nullptr;
@@ -64,7 +64,7 @@ ChatBot::ChatBot(const ChatBot& chatBot)
 
 ChatBot::ChatBot(ChatBot&& chatBot)
 {
-    std::cout<<"--> ChatBot move constructor\n";
+    std::cout<<"ChatBot move constructor\n";
     _image = chatBot._image;
     _currentNode = chatBot._currentNode;
     _rootNode = chatBot._rootNode;
@@ -78,7 +78,7 @@ ChatBot::ChatBot(ChatBot&& chatBot)
 
 ChatBot& ChatBot::operator=(const ChatBot& chatBot)
 {
-    std::cout<<"--> ChatBot copy assignment\n";
+    std::cout<<"ChatBot copy assignment\n";
     if (&chatBot == this)
         return *this;
 
@@ -102,7 +102,7 @@ ChatBot& ChatBot::operator=(const ChatBot& chatBot)
 
 ChatBot& ChatBot::operator=(ChatBot&& chatBot)
 {
-    std::cout<<"--> ChatBot move assignment\n";
+    std::cout<<"ChatBot move assignment\n";
     if (&chatBot == this)
         return *this;
 

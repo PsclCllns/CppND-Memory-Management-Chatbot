@@ -22,7 +22,7 @@ private:
 public:
     // constructor / desctructor
     GraphEdge(int id);
-    ~GraphEdge() {std::cout<<"Destructor GraphEdge\n";}
+    //~GraphEdge() {std::cout<<"Destructor GraphEdge\n";} //DEBUG
 
     // getter / setter
     int GetID() { return _id; }
